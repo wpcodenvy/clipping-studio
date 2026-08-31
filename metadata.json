@@ -1,0 +1,6 @@
+{
+  "name": "AI Clipper Studio",
+  "description": "Automated video clipper that transforms digital DNA, injects viral hooks, trims silence, integrates Groq Whisper & Muse Spark, dynamic Coverr B-roll, and auto-frames 9:16 vertical video.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

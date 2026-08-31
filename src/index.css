@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  h1, h2, h3, .font-display {
+    font-family: 'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Safe Zone Guides for TikTok & Shopee Video */
+.safezone-tiktok-overlay {
+  pointer-events: none;
+  border: 1px dashed rgba(239, 68, 68, 0.4);
+}
+
+.tiktok-action-bar {
+  pointer-events: none;
+}
+
+@keyframes word-pop {
+  0% { transform: scale(0.92); opacity: 0.7; }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-word-pop {
+  animation: word-pop 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
